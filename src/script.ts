@@ -21,4 +21,12 @@ arr.push('name', 0)
 // console.log(arr)
 let a: string[]
 a = ['amc', 'nmc']
-console.log(a);
+// console.log(a);
+
+let d = []
+d.push({}, 'nn', [], null)
+// console.log(d);
+
+let e = ['amra']
+e.push('string array te sudu matro string rakha zay')
+// console.log(e);

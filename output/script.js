@@ -19,4 +19,10 @@ arr.push('name', 0);
 // console.log(arr)
 var a;
 a = ['amc', 'nmc'];
-console.log(a);
+// console.log(a);
+var d = [];
+d.push({}, 'nn', [], null);
+console.log(d);
+var e = ['amra'];
+e.push('string array te sudu matro string rakha zay');
+console.log(e);
