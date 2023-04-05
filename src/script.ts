@@ -30,3 +30,7 @@ d.push({}, 'nn', [], null)
 let e = ['amra']
 e.push('string array te sudu matro string rakha zay')
 // console.log(e);
+
+//object sentex on TS
+
+
