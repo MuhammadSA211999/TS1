@@ -1,4 +1,4 @@
-
+import { Teacher } from './Teacher.js'
 const mapMethod = (array: Array<any>) => {
     const result = array.filter(arr => {
         if (arr) {
@@ -98,25 +98,31 @@ players.push(msDhoni)
 players.push(moenAli)
 // console.log(players)
 
+
 //class with access modifier
-class Teacher {
-    //    public name: string
-    //    readonly country: string
-    //    private age: number
-    constructor(public name: string,
-        readonly country: string,
-        private age: number) {
+// class Teacher {
+//     //    public name: string
+//     //    readonly country: string
+//     //    private age: number
+//     constructor(public name: string,
+//         readonly country: string,
+//         private age: number) {
 
-    }
-    //Player function/Method 
-    education(school: string, college: string, uni: string) {
-        console.log(`${school} from ${college} is ${uni}`);
-    }
-    playing() {
-        console.log(`${this.name} from ${this.country} is ${this.age}`);
-    }
-}
+//     }
+//     //Player function/Method
+//     education(school: string, college: string, uni: string) {
+//         console.log(`${school} from ${college} is ${uni}`);
+//     }
+//     playing() {
+//         console.log(`${this.name} from ${this.country} is ${this.age}`);
+//     }
+// }
 
-const maksud = new Teacher('maksud', 'bangladesh', 37)
-maksud.name = 'Taher' //nmaksud.name is accesabl and will modified, because it's a public property of class Teacher 
-// but age and country are not accessable, because it is readonly and private
+// const maksud = new Teacher('maksud', 'bangladesh', 37)
+// maksud.name = 'Taher' //nmaksud.name is accesabl and will modified, because it's a public property of class Teacher
+// // but age and country are not accessable, because it is readonly and private
+
+// import a class from Teacher with moduler system
+const teacher = new Teacher('Ala-Uddin', 'Bangladesh', 56)
+teacher.education('MSC in Physics', 'Rajshahi University')
+console.log(teacher)
