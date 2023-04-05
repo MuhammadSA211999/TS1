@@ -51,5 +51,39 @@ calculate = function (a, b, c) {
         return a / b;
     }
 };
-var resul = calculate(4, 5, 'multiply');
-console.log(resul);
+// const resul = calculate(4, 5, 'multiply')
+// console.log(resul);
+var userDetails;
+userDetails = function (id, userInfo) {
+    var result = id + userInfo.age;
+    return result;
+};
+//classws in typescript 
+var Player = /** @class */ (function () {
+    function Player(n, c, a) {
+        this.name = n;
+        this.country = c;
+        this.age = a;
+    }
+    //Player function/Method 
+    Player.prototype.education = function (school, college, uni) {
+        console.log("".concat(school, " from ").concat(college, " is ").concat(uni));
+    };
+    Player.prototype.playing = function () {
+        console.log("".concat(this.name, " from ").concat(this.country, " is ").concat(this.age));
+    };
+    return Player;
+}());
+var moenAli = new Player('Moeen Ali', 'Pak-Eng', 36);
+var msDhoni = new Player('MS Dhoni', 'India', 40);
+msDhoni.age = 60;
+// console.log(msDhoni)
+// const dhoni = msDhoni.playing()
+// const dhoniEduca = msDhoni.education('cannpur hng', 'cannpur govt', 'IIT')
+// console.log(dhoniEduca)
+//make array of this Player class 
+var players = [];
+// players.push({}) //failed
+players.push(msDhoni);
+players.push(moenAli);
+console.log(players);

@@ -58,8 +58,42 @@ calculate = (a: number, b: number, c: string) => {
     }
 }
 
-const resul = calculate(4, 5, 'multiply')
-console.log(resul);
+// const resul = calculate(4, 5, 'multiply')
+// console.log(resul);
 
-
-
+let userDetails: (id: number, userInfo: { name: string, age: number }) => number
+userDetails = (id: number, userInfo: { name: string, age: number }) => {
+    const result = id + userInfo.age
+    return result
+}
+//classws in typescript 
+class Player {
+    name: string
+    country: string
+    age: number
+    constructor(n: string, c: string, a: number) {
+        this.name = n
+        this.country = c
+        this.age = a
+    }
+    //Player function/Method 
+    education(school: string, college: string, uni: string) {
+        console.log(`${school} from ${college} is ${uni}`);
+    }
+    playing() {
+        console.log(`${this.name} from ${this.country} is ${this.age}`);
+    }
+}
+const moenAli = new Player('Moeen Ali', 'Pak-Eng', 36)
+const msDhoni = new Player('MS Dhoni', 'India', 40)
+msDhoni.age = 60
+// console.log(msDhoni)
+// const dhoni = msDhoni.playing()
+// const dhoniEduca = msDhoni.education('cannpur hng', 'cannpur govt', 'IIT')
+// console.log(dhoniEduca)
+//make array of this Player class 
+const players: Player[] = []
+// players.push({}) //failed
+players.push(msDhoni)
+players.push(moenAli)
+console.log(players)
