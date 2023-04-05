@@ -31,6 +31,35 @@ let e = ['amra']
 e.push('string array te sudu matro string rakha zay')
 // console.log(e);
 
-//object sentex on TS
+//function signature sentex on TS
+let myFunc: (x: string, y: string) => void
+//ekhane myFunc ekta function variable, myFunc function ti duite string paramtre ney ebng kuno kichu return kore na
+
+let add: (a: number, b: number, c?: number) => number
+add = (a: number, b: number) => {
+    const d = a * b
+    return d
+}
+// const resul = add(10, 6, 6)
+// console.log(resul)
+let calculate: (a: number, b: number, c: string) => number
+calculate = (a: number, b: number, c: string) => {
+    if (c === 'add') {
+        return a + b
+    }
+    else if (c === 'minus') {
+        return a - b
+    }
+    else if (c === 'multiply') {
+        return a * b
+    }
+    else {
+        return a / b
+    }
+}
+
+const resul = calculate(4, 5, 'multiply')
+console.log(resul);
+
 
 
