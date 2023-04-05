@@ -125,4 +125,29 @@ players.push(moenAli)
 // import a class from Teacher with moduler system
 const teacher = new Teacher('Ala-Uddin', 'Bangladesh', 56)
 teacher.education('MSC in Physics', 'Rajshahi University')
-console.log(teacher)
+// console.log(teacher)
+
+//interface on function 
+// function drawRectAngel(options: { width: number, length: number }) {
+//     let a = options.length
+//     let b = options.width
+//     return (a * b) / 2
+// }
+const ractangel = drawRectAngel({ width: 30, length: 40 })
+console.log(ractangel)
+//make a interfaces
+interface RactangelOptions {
+    width: number
+    length: number
+}
+
+function drawRectAngel(options: RactangelOptions) {
+    let width = options.width
+    let length = options.length
+    return (width * length) / 2
+}
+
+
+const ractangelResult = drawRectAngel({ width: 30, length: 60 })
+console.log(ractangelResult)
+
