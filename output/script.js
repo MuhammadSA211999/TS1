@@ -1,5 +1,4 @@
 "use strict";
-console.log('BD');
 var mapMethod = function (array) {
     var result = array.filter(function (arr) {
         if (arr) {
@@ -13,4 +12,11 @@ var mapMethod = function (array) {
 };
 var array = [0, 3, null, '', [], {}, undefined];
 var result = mapMethod(array);
-console.log(result);
+// console.log(result);
+//array sentex of TS
+var arr = [];
+arr.push('name', 0);
+// console.log(arr)
+var a;
+a = ['amc', 'nmc'];
+console.log(a);

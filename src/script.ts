@@ -1,4 +1,4 @@
-console.log('BD');
+
 const mapMethod = (array: Array<any>) => {
     const result = array.filter(arr => {
         if (arr) {
@@ -13,4 +13,12 @@ const mapMethod = (array: Array<any>) => {
 
 const array = [0, 3, null, '', [], {}, undefined]
 const result = mapMethod(array)
-console.log(result);
+// console.log(result);
+
+//array sentex of TS
+let arr: (string | boolean | number)[] = []
+arr.push('name', 0)
+// console.log(arr)
+let a: string[]
+a = ['amc', 'nmc']
+console.log(a);
